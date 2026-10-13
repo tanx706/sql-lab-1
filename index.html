@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLi Practice Lab - Login Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lab-banner">⚠️ LOCAL PENETRATION TESTING LAB - AUTHORIZED USE ONLY ⚠️</div>
+    
+    <div class="login-container">
+        <h2>SecureCorp Portal</h2>
+        <p class="subtitle">Internal Employee Authentication</p>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username / Email</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" autocomplete="off" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            
+            <button type="submit" class="btn">Authenticate</button>
+        </form>
+
+        <div id="output" class="output-box hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
